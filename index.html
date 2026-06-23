@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Search Filter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <h1>🔍 Live Search Filter</h1>
+      <p class="subtitle">Start typing to filter items instantly</p>
+    </div>
+
+    <div class="search-box">
+      <span class="search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </span>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search items..."
+        autocomplete="off"
+        autofocus
+      />
+      <button class="clear-btn" id="clearBtn" title="Clear search">✕</button>
+    </div>
+
+    <div class="results-meta">
+      <span id="resultCount">Showing 20 of 20 items</span>
+    </div>
+
+    <ul class="item-list" id="itemList">
+      <li>Apple iPhone 15 Pro</li>
+      <li>Samsung Galaxy S24</li>
+      <li>Google Pixel 8</li>
+      <li>OnePlus 12</li>
+      <li>Sony WH-1000XM5 Headphones</li>
+      <li>Apple MacBook Air M2</li>
+      <li>Dell XPS 15 Laptop</li>
+      <li>HP Spectre x360</li>
+      <li>Lenovo ThinkPad X1 Carbon</li>
+      <li>Apple iPad Pro</li>
+      <li>Samsung Galaxy Tab S9</li>
+      <li>Amazon Echo Dot</li>
+      <li>Apple Watch Series 9</li>
+      <li>Fitbit Charge 6</li>
+      <li>Logitech MX Master 3 Mouse</li>
+      <li>Mechanical Keyboard Keychron K2</li>
+      <li>LG 27-inch 4K Monitor</li>
+      <li>GoPro Hero 12 Camera</li>
+      <li>Nintendo Switch OLED</li>
+      <li>PlayStation 5 Controller</li>
+    </ul>
+
+    <div class="no-results" id="noResults">
+      <div class="no-results-icon">🔎</div>
+      <p>No results found for <strong id="searchedTerm"></strong></p>
+      <span>Try a different keyword</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
